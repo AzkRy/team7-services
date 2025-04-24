@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Public Market Vendor Registration Form</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    </head>
+    <body>
+        <div class="Container">                 
+            <div class="Form">    
+                <h1> Public Market Vendor Registration Form </h1>
+                <h2>Form</h2>          
+                <form id="Vendor-Form">
+                    <div class="form-container">
+                        <div class="Vendor-detail">
+                            <div class="business-name">
+                                <label for="business-name">Business Name: </label> 
+                                <input type="text" name="business-name" id="business-name" placeholder="Business Name" required>
+                            </div>
+                            <div class="product-type">
+                                <label for="type">Product Type: </label>
+                                <select name="product-type" id="product-type">
+                                    <option value="vegetables">Vegetables</option>
+                                    <option value="meat">Meat</option>
+                                    <option value="fish">Fish</option>
+                                </select>    
+                            </div>      
+                            <div class="permit-number">
+                                <label for="permit-number">Permit Number: </label>
+                                <input type="text" name="permit-number" id="permit-number" placeholder="Permit Number" required>
+                            </div>
+                        </div>
+                        <div class="Compliance-check">
+                            <div class="Sanitary">
+                                <label for="sanitary">Sanitary Practices: </label> <br>
+                                <input type="radio" name="sanitary" id="sanitary" value="Good">Good <br>
+                                <input type="radio" name="sanitary" id="sanitary" value="Fair">Fair <br>
+                                <input type="radio" name="sanitary" id="sanitary" value="Poor">Poor <br>
+                            </div>
+                            <div class="stall-cleanliness">
+                                <label for="cleanliness">Stall Cleanliness: </label> <br>
+                                <input type="checkbox" name="cleaning" id="cleanliness">Daily Cleaning <br>
+                                <input type="checkbox" name="disposal" id="cleanliness">Waste Disposal
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <div class="submit-button">
+                            <input type="submit" class="submit" id="submit">
+                        </div>
+                        <div class="export-button">
+                            <button type="button" class="export" onclick="exportToExcel()"><img src="export-icon.png" height="25px" width="25px"></button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="table">
+                <table id="vendor-table">
+                    <thead>
+                        <tr>
+                            <th>Business Name</th>
+                            <th>Product Type</th>
+                            <th>Permit Number</th>
+                            <th>Sanitary Practices</th>
+                            <th>Stall Cleanliness</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
