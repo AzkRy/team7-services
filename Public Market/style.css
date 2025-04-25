@@ -1,0 +1,175 @@
+body {
+    background-image: url(table-top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Container {
+    width: 750px;
+    height: 760px;
+    font-family: 'permanentmarker', cursive;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.form-container {
+    display: flex;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.Form {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1);
+    width: 700px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'permanentmarker', cursive;
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+
+}
+
+.btn {
+    display: flex;
+    width: 100%;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+.submit {
+    width: 100px;
+    height: 40px;
+    margin: 20px auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #8f5a37;
+}
+
+.export-button {
+    display: flex;
+    justify-content: end;
+    margin-top: auto;
+}
+
+.export {
+    width: 50px;
+    height: 40px;
+    margin: 20px auto;
+    background-color: #8f5a37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 100%;
+}
+
+.export:hover {
+    background-color: #4CAF50;
+}
+
+.Vendor-detail {
+    width: 110%;
+    height: 100%;
+    padding: 5px;
+    border-right: #000000 solid 1px;    
+    box-sizing: border-box;
+}
+
+.Compliance-check {
+    width: 90%;
+    height: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-right: #000000 solid 1px;
+}
+
+input[type="text"] {
+    width: fit-content;
+    height: 30px;
+    border: none;
+    border-bottom: #000000 solid 1px;
+    margin: 15px;
+}
+
+select {
+    width: fit-content;
+    height: 30px;
+    border: none;
+    border-bottom: #000000 solid 1px;
+    margin: 15px;
+}
+
+.Sanitary {
+    height: fit-content;
+    border: none;
+    border-bottom: #000000 solid 1px;
+    margin-bottom: 3%;
+}
+
+.non-compliant {
+    background-color: #ffcccc !important;
+    color: #8b0000;
+    font-weight: bold;
+}
+
+/* table */
+.table {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+table {
+    width: 700px;
+    height: fit-content;
+    margin: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color:rgb(196, 164, 132);
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}  
+
+td {
+    background-color: rgb(255, 255, 255);
+    border-collapse: collapse;
+    border: 1px solid rgb(0, 0, 0);
+}
